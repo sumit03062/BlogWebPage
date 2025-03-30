@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Stay updated with the latest trends in tech, coding, and web development. Explore insightful blogs on JavaScript, Python, AI, and more!">
+    <meta name="keywords" content="blog, technology, coding, programming, web development, JavaScript, Python, AI, UI/UX, freelancing, full-stack development">
+    <meta name="author" content="MyBlog">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags (for social sharing) -->
+    <meta property="og:title" content="MyBlog - Latest in Tech & Coding">
+    <meta property="og:description" content="Explore the best blogs on programming, AI, web development, and more.">
+    <meta property="og:image" content="images/preview.jpg">
+    <meta property="og:url" content="https://myblog.com">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MyBlog - Tech & Coding Insights">
+    <meta name="twitter:description" content="Discover the latest in JavaScript, Python, AI, and web development.">
+    <meta name="twitter:image" content="images/preview.jpg">
+
+    <title>MyBlog - Latest in Tech & Coding</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">MyBlog</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">&#9776;</div>
+    </header>
+
+    <!-- Hero Section (Featured Blog Post) -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Explore the Latest in Tech & Coding</h1>
+            <p>Stay updated with the best blogs on development, design, and trends.</p>
+        </div>
+    </section>
+
+    <!-- Blog Post Grid -->
+    <section class="blog-container">
+        <article class="blog-card">
+            <img src="images/jsL.webp" alt="Tech">
+            <div class="blog-info">
+                <h2>Top 10 JavaScript Frameworks in 2025</h2>
+                <p>Discover the latest frameworks that developers love.</p>
+                <a href="#blog-content"><button onclick="showBlog('blog1')" class="read-more" data-blog="blog1">Read More</button></a>
+            </div>
+        </article>
+
+        <article class="blog-card">
+            <img src="images/jp.webp" alt="Coding">
+            <div class="blog-info">
+                <h2>Python vs Java: Which One to Choose?</h2>
+                <p>A detailed comparison for beginners and experts.</p>
+                <a href="#blog-content"><button onclick="showBlog('blog2')" class="read-more" data-blog="blog2">Read More</button></a>
+            </div>
+        </article>
+
+        <article class="blog-card">
+            <img src="images/uiux.webp" alt="Design">
+            <div class="blog-info">
+                <h2>UI/UX Trends for 2025</h2>
+                <p>How to design modern, user-friendly interfaces.</p>
+                <a href="#blog-content"><button onclick="showBlog('blog3')" class="read-more" data-blog="blog3">Read More</button></a>
+            </div>
+        </article>
+
+        <article class="blog-card">
+            <img src="images/pro.webp" alt="Programming">
+            <div class="blog-info">
+                <h2>Top 10 Programming Languages to Learn in 2025</h2>
+                <p>Discover the most in-demand languages shaping the future.</p>
+                <a href="#blog-content"><button onclick="showBlog('blog4')" class="read-more" data-blog="blog4">Read More</button></a>
+            </div>
+        </article>
+    
+        <article class="blog-card">
+            <img src="images/data.webp" alt="Technical Interview">
+            <div class="blog-info">
+                <h2>How to Ace Your Technical Interviews (DSA & System Design)</h2>
+                <p>Master DSA and system design to crack top tech interviews.</p>
+                <a href="#blog-content"><button onclick="showBlog('blog5')" class="read-more" data-blog="blog5">Read More</button></a>
+            </div>
+        </article>
+    
+        <article class="blog-card">
+            <img src="images/dev.webp" alt="Technology">
+            <div class="blog-info">
+                <h2>The Future of Web Development: Trends & Technologies</h2>
+                <p>Explore the latest advancements in web development.</p>
+                <a href="#blog-content"><button onclick="showBlog('blog6')" class="read-more" data-blog="blog6">Read More</button></a>
+            </div>
+        </article>
+    
+        <article class="blog-card">
+            <img src="images/ai.webp" alt="AI">
+            <div class="blog-info">
+                <h2>AI-Powered Code Assistants: Revolutionizing Programming</h2>
+                <p>How AI is changing the way we write and optimize code.</p>
+                <a href="#blog-content"><button onclick="showBlog('blog7')" class="read-more" data-blog="blog7">Read More</button></a>
+            </div>
+        </article>
+    
+        <article class="blog-card">
+            <img src="images/code.jpg" alt="Software">
+            <div class="blog-info">
+                <h2>Best Practices for Writing Clean and Maintainable Code</h2>
+                <p>Improve your coding skills with these essential tips.</p>
+                <a href="#blog-content"><button onclick="showBlog('blog8')" class="read-more" data-blog="blog8">Read More</button></a>
+            </div>
+        </article>
+    
+        <article class="blog-card">
+            <img src="images/fj.webp" alt="Freelancing">
+            <div class="blog-info">
+                <h2>Freelancing vs Full-Time Job: Which is Better for Developers?</h2>
+                <p>Explore the pros and cons of freelancing and full-time jobs.</p>
+                <a href="#blog-content"><button onclick="showBlog('blog9')" class="read-more" data-blog="blog9">Read More</button></a>
+            </div>
+        </article>
+    
+        <article class="blog-card">
+            <img src="images/fd.webp" alt="Backend">
+            <div class="blog-info">
+                <h2>Django vs Flask: Which Python Framework is Right for You?</h2>
+                <p>Compare the pros and cons of these popular web frameworks.</p>
+                <a href="#blog-content"><button onclick="showBlog('blog10')" class="read-more" data-blog="blog10">Read More</button></a>
+            </div>
+        </article>
+    
+        <article class="blog-card">
+            <img src="images/Fsd.webp" alt="Career">
+            <div class="blog-info">
+                <h2>How to Become a Full-Stack Developer in 2025</h2>
+                <p>Step-by-step roadmap to mastering full-stack development.</p>
+                <a href="#blog-content"><button onclick="showBlog('blog11')" class="read-more" data-blog="blog11">Read More</button></a>
+            </div>
+        </article>
+    
+        <article class="blog-card">
+            <img src="images/cs.webp" alt="Cybersecurity">
+            <div class="blog-info">
+                <h2>How to Secure Your Web Applications from Cyber Threats</h2>
+                <p>Essential security practices every developer should know.</p>
+                <a href="#blog-content"><button onclick="showBlog('blog12')" class="read-more" data-blog="blog12">Read More</button></a>
+            </div>
+        </article>
+    </section>
+
+    <!-- Blog Content Section -->
+    <section id="blog-content" class="hidden">
+        <div id="blog-text"></div>
+    </section>
+
+
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>Welcome to MyBlog, your ultimate destination for tech insights, programming trends, and software development tips.</p>
+        <p>We are passionate about coding, web development, AI, and everything tech-related. Our mission is to help developers stay ahead in the ever-evolving tech world.</p>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Have any questions or suggestions? Feel free to reach out!</p>
+        <form id="myform">
+            <input id="name" type="text" placeholder="Your Name" required>
+            <input id="email" type="email" placeholder="Your Email" required>
+            <textarea id="msg" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="message"></p>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 MyBlog | Designed with ❤️</p>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank">Facebook</a> |
+            <a href="https://twitter.com" target="_blank">Twitter</a> |
+            <a href="www.linkedin.com/in/sumit-kumar-ab950233a" target="_blank">LinkedIn</a> |
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
